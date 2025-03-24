@@ -9,13 +9,13 @@ from relatorios import RelatorioApp
 class Dashboard:
     def __init__(self, role):
         self.root = tk.Tk()
-        self.root.title("MedSys - Painel Principal")
+        self.root.title("Hospital Estadual Sapiranguense - Painel Principal")
         self.root.geometry("500x300")
         self.root.resizable(False, False)
 
         aplicar_tema(self.root)
 
-        ttk.Label(self.root, text="Bem-vindo ao MedSys", font=("Arial", 14)).pack(pady=10)
+        ttk.Label(self.root, text="Bem-vindo ao Hospital E.A", font=("Arial", 14)).pack(pady=10)
 
         frame = ttk.Frame(self.root, padding=10)
         frame.pack()

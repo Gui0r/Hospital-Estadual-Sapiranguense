@@ -7,7 +7,7 @@ from theme import aplicar_tema
 class LoginApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Login - MedSys")
+        self.root.title("Login - Hospital Estadual Sapiranguense")
         self.root.geometry("320x200")
         self.root.resizable(False, False)
 

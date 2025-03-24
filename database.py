@@ -8,21 +8,22 @@ config.read("config.ini")
 
 class Database:
     def __init__(self):
-        self.conn = mysql.connector.connect(
+        self.connection = mysql.connector.connect(
             host=DB_HOST,
             user=DB_USER,
             password=DB_PASSWORD,
             database=DB_NAME
         )
-        self.cursor = self.conn.cursor()
+        self.cursor = self.connection.cursor()
 
-    def execute(self, query, params=None):
-        self.cursor.execute(query, params or ())
-        self.conn.commit()
+    def execute(self, query, values=None):
+        self.cursor.execute(query, values or ())
+        self.connection.commit()
 
-    def fetch(self, query, params=None):
-        self.cursor.execute(query, params or ())
+    def fetch(self, query, values=None):
+        self.cursor.execute(query, values or ())
         return self.cursor.fetchall()
 
     def close(self):
-        self.conn.close()
+        self.cursor.close()
+        self.connection.close()

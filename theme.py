@@ -1,5 +1,5 @@
-from ttkthemes import ThemedStyle
+from tkinter import ttk
 
 def aplicar_tema(root):
-    style = ThemedStyle(root)
-    style.set_theme("arc")  # Alternativa: "radiance", "breeze", "equilux"
+    style = ttk.Style(root)
+    style.theme_use('clam')  
