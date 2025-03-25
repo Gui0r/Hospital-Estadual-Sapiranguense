@@ -12,11 +12,16 @@ Um sistema simples para gerenciar consultas médicas, desenvolvido em Python com
 
 ## Como usar
 
-1. Instale as dependências:
+1. Clone o repositorio usando
+```
+git clone https://github.com/Gui0r/JogoMisterioso.git
+```
+
+2. Instale as dependências:
  pip install -r requirements.txt
 
 
-2. Configure o banco de dados MySQL:
+3. Configure o banco de dados MySQL:
     - Baixe o xampp
     - Execute o Apache e o MySQL
     - Clique no botão Admin no MySQL, ele ira abrir um phpmyadmin
@@ -31,11 +36,11 @@ VALUES ('admin', 'admin123', 'admin');
 ou coloque as credenciais que você quiser
 ```
 
-3. Execute o sistema:
+4. Execute o sistema:
     - No terminal da IDE que você estiver execute o arquivo app.py
 
 
-4. Faça login com as credenciais:
+5. Faça login com as credenciais:
     - Usuário: admin
     - Senha: admin123
 
